@@ -6,7 +6,7 @@
 }
 .navbar {
     background-color: #0f1111;
-    height: 70px;
+    height: auto;
     color: white;
     display: flex;
     align-items: center;
@@ -26,7 +26,7 @@
     height: 50px;
     width: 100%;
     background-size: cover;
-    background-image: url("/amazon_logo.png");
+    background-image: url("amazon_logo.png");
 }
 .border {
     border: 1.5px solid transparent;
@@ -70,7 +70,6 @@
 .nav-searchbar:hover {
     border: 2px solid orange;
     border-radius: 5px;
-    
 }
 .nav-select {
     background-color: #f3f3f3;
@@ -91,8 +90,18 @@
     background-color: #febd68;
     color: #0f1111;
 }
+.nav-login-user {
+    display: none;
+}
+.nav-sigin {
+    color: white;
+}
 span {
     font-size: 0.75rem;
+    color: white;
+}
+.white {
+    color: white;
 }
 .font-bold {
     font-size: 0.85rem;
@@ -134,7 +143,7 @@ a {
 }
 /** Hero Section **/
 .hero-section {
-    background-image: url("/Hero_1.jpg");
+    background-image: url("Hero_1.jpg");
     background-size: cover;
     height: 500px;
     /* display: flex; */
@@ -251,6 +260,32 @@ a {
 
 /*For mobile*/
 @media (max-width: 480px) {
+    .navbar {
+        display: block;
+        height: 110px;
+    }
+    .logo {
+        display: block;
+    }
+    .nav-searchbar {
+        margin-top: 7px;
+        width: 97%;
+    }
+    .nav-login-user {
+        display: inline-block;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: white;
+    }
+    .nav-login-user i{
+      color: white;
+      font-size: 20px;
+    }
+    .login{
+      color:white;
+      font-size: 16px;
+    }
     .box {
         width: 90%;
     }
@@ -299,9 +334,9 @@ a {
     }
 } */
 
-.box {
+/* .box {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+} */
 /*
 .box:hover {
     transform: translateY(-5px);Lift effect
